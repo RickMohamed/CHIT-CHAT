@@ -13,8 +13,8 @@ const names = ['Tommas Shelby', 'Harry kane', 'Bruce Wayne', 'Karim Benzema', 'T
 const {title, setTitle} = useContext(Context);
 const {open, setOpen} = useContext(Context);
 
-const settitle=()=>(
-    setTitle("Karim")
+const settitle=(e)=>(
+    setTitle('Bruce Wayne')
 )
 
     return ( 
@@ -27,7 +27,7 @@ const settitle=()=>(
 
             {
                 names.map((name)=>(
-                    <div className={styles.chats} key={name}>
+                    <div className={styles.chats} key={name} onClick={settitle}>
                     <Link  href={'/'} className={styles.link}>
                     <img className={styles.chatsimg} src="img.jpg" alt="img" onClick={()=>{setOpen(!open)}}/>
                     <li>

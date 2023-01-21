@@ -1,5 +1,5 @@
 import styles from '../styles/Styles.module.css'
-import { AiOutlineSend } from 'react-icons/ai'
+import { RiSendPlaneFill } from 'react-icons/ri'
 import { BsEmojiSmile } from 'react-icons/bs'
 import { GiPaperClip } from 'react-icons/gi'
 const Textbar = () => {
@@ -12,7 +12,7 @@ const Textbar = () => {
               <div className={styles.sendicons}>
                 <GiPaperClip className={styles.sendicon}/>
                <BsEmojiSmile className={styles.sendicon}/>
-               <AiOutlineSend className={styles.send}/>
+               <RiSendPlaneFill className={styles.send}/>
                
                </div> 
             </form>

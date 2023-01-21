@@ -4,7 +4,7 @@ import { auth, storage, db } from '../firebaseConfig'
 import { useState } from 'react';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { doc, setDoc } from 'firebase/firestore'
-// import { useNavigate, Link } from "react-router-dom";
+import Link from 'next/link';
 
 
 const Signin = () => {
@@ -89,8 +89,11 @@ const Signin = () => {
             <span>Add an avatar</span>
           </label>
             <button className={styles.signinbtn}>Sign Up</button>
+            <p>Already have an account? <Link href="/Login">Log In</Link></p>
+
             {err && <span>Something went wrong</span>}
         </form>
+
         </div>
         </div>
         

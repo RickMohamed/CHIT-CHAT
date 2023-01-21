@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #000;
 }
 
 .card
@@ -101,16 +101,16 @@ width: 70%;
   padding: .8rem;
   font-size: 1rem;
   margin-top: 1rem;
-  color: #000;
-  border: 3px solid #fff;
-  background: #fff;
+  color: #fff;
+  border: 3px solid #000;
+  background: #000;
   border-radius: .4rem;
   transition: .4s ease;
   cursor: pointer;
 }
 .signinbtn:hover
 {
-  color: #fff;
+  color: #000;
   background: #fe8e04;
   border-radius: .4rem;
   transition: .4s ease;
@@ -120,14 +120,14 @@ width: 70%;
 
 .title
 {
-  color: #000;
+  color: #fff;
   box-shadow: -40px 10px 30px black;
   border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .5rem 1.7rem;
-  background: #f5f5f5;
+  background: #000;
   font-weight: bold;
   height: 5.5rem;
 transition: .8s ease;
@@ -151,7 +151,7 @@ transition: .8s ease;
   width: 2.6rem;
   height: 2.6rem;
   padding: .3rem;
-  color: #fff;
+  color: #000;
   background: #fe9a04;
   border: 2.4px solid #fe8e04;
   border-radius: 2rem;
@@ -215,7 +215,7 @@ transition: .8s ease;
 
 .messagessec
 {
-  background:  #f5f5f5;
+  background:  #000;
 padding: .9rem;
     width: 100%;
     right: 0;
@@ -238,7 +238,7 @@ padding: .9rem;
   margin-bottom: 1.25rem;
 }
 
-.Owner
+.owner
 {
   display: flex;
   flex-direction: row-reverse;
@@ -247,7 +247,7 @@ padding: .9rem;
 }
 
 
-.Owner .messageContent
+.owner .messageContent
 {
   align-items: flex-end; 
   max-width: 80%;
@@ -255,7 +255,7 @@ padding: .9rem;
   flex-direction: column;
   gap: .63rem;
 }
-.Owner p
+.owner p
 {
   max-width: max-content;
   color: #fff;
@@ -484,16 +484,16 @@ transition: .8s ease;
   align-items: center;
   padding: .5rem;
   position: relative;
-  background: #fff;
+  background: #333;
   display: flex;
   align-items: center;
 }
 
 .inputbox
 {
-  color: #000;
+  color: #fff;
   padding: 0 1.4rem;
-  background: #fff;
+  background: #333;
   outline: none;
   height: 70%;
   width: 80%;
@@ -520,24 +520,29 @@ transition: .8s ease;
   height: 2rem;
 }
 
+.sendicon:hover
+{
+  color: #fff;
+}
+
 .send
 {
   cursor: pointer;
   border-radius: 50%;
-  padding: .4rem;
+  /* padding: .2rem .4rem;
   background: #fe8e04;
-  border: 2.3px solid #fe8e04;
-  color: white;
+  border: 2.3px solid #fe8e04; */
+  color: #fe8e04;
   width: 2.8rem;
-  height: 2.6rem;
+  height: 2.8rem;
   transition: .5s ease;
 }
 
-.send:hover
+/* .send:hover
 {
   background: transparent;
   color: #fe8e04;
-}
+} */
 
 
 @media (max-width:800px) {
@@ -554,12 +559,12 @@ transition: .8s ease;
 
 .detailss
 {
-  color: #000;
+  color: #ffffff;
   width: 16rem;
   height: 100vh;
   border-radius: .7rem;
   top: 0;
-  background: #fff;
+  background: #333;
   position: fixed;
   top: 0;
   right: 0;
@@ -577,7 +582,7 @@ transition: .8s ease;
   width: 16rem;
   height: 100vh;
   border-radius: .7rem;
-  background: #fff;
+  background: #000;
   position: fixed;
   top: 0;
   right: -16rem;
@@ -599,13 +604,13 @@ transition: .8s ease;
 }
 .close
 {
+  color: #fff;
   margin-top: 1.2rem;
   margin-left: auto;
   cursor: pointer;
   width: 1.7rem;
 }
 
-search
 
 .close:hover
 {

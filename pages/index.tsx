@@ -1,4 +1,3 @@
-import Intro from '../comps/Convosection'
 import Sidebar from '../comps/Sidebar'
 import Details from '../comps/Details'
 import Signin from './Signin'
@@ -7,6 +6,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import Chatpage from '../comps/Chatsection'
 import { useContext } from 'react';
 import Context from '../contexts/Context';
+import Login from './Login'
 
 
 const Main = () => {
@@ -46,7 +46,7 @@ console.log(user)
 
 
     :<div className="signin">
-        <Signin/>
+       { <Signin/> }
     </div>}
     
 

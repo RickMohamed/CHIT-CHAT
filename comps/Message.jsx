@@ -11,7 +11,7 @@ const Message = () => {
 
     return ( 
         <>
-         <div className={styles.message}>
+         <div className={styles.owner}>
             <div className={styles.messageInfo}>
                 <img  src="img.jpg" alt="" />
                 <span>just now</span>

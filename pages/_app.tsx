@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const[open, setOpen] = useState(true)
 
-  const[title, seTitle] = useState('Chit-Chat')
+  const[title, setTitle] = useState('')
 
 
   // const [currentUser, setCurrentUser] = useState({});
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className='contents'>
-      <Context.Provider value={ {open, setOpen, title, seTitle }}>
+      <Context.Provider value={ {open, setOpen, title, setTitle }}>
         <Component {...pageProps} />
       </Context.Provider>
     </div>
